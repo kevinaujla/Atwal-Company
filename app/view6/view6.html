@@ -3,47 +3,36 @@
 </div>
 
 <div class="col-md-4">
-<form class="form-horizontal" id="contact_form">
-<fieldset>
-
-<!-- Form Name -->
-<legend>Contact Us</legend>
-
-<!-- Text input-->
-<div class="form-group">
-  <label class="col-md-3 control-label" for="name">Name</label>  
-  <div class="col-md-9">
-  <input id="name" name="name" type="text" placeholder="Enter your full name here" class="form-control input-md" required="">
-    
-  </div>
-</div>
-
-<!-- Text input-->
-<div class="form-group">
-  <label class="col-md-3 control-label" for="email">Email</label>  
-  <div class="col-md-9">
-  <input id="email" name="email" type="text" placeholder="Enter your email address here" class="form-control input-md" required="">
-    
-  </div>
-</div>
-
-<!-- Textarea -->
-<div class="form-group">
-  <label class="col-md-3 control-label" for="msg">Message</label>
-  <div class="col-md-9">                     
-    <textarea class="form-control" id="msg" name="msg" cols="6" rows="6"></textarea>
-  </div>
-</div>
-
-<!-- Button -->
-<div class="form-group">
-  <label class="col-md-3 control-label" for="submit"></label>
-  <div class="col-md-9">
-    <button id="submit" name="submit" class="btn btn-primary">Send Message</button>
-  </div>
-</div>
-</fieldset>
-</form>
+<form action="contact.php" method="POST" name="sentMessage" id="contactForm" novalidate>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>Full Name:</label>
+                            <input type="text" class="form-control" id="name" name="fullName" required data-validation-required-message="Please enter your name.">
+                            <p class="help-block"></p>
+                        </div>
+                    </div>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>Phone Number:</label>
+                            <input type="tel" class="form-control" name="phone" id="phone" required data-validation-required-message="Please enter your phone number.">
+                        </div>
+                    </div>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>Email Address:</label>
+                            <input type="email" class="form-control" name="email" id="email" required data-validation-required-message="Please enter your email address.">
+                        </div>
+                    </div>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>Message:</label>
+                            <textarea rows="10" cols="100" class="form-control" name="message" id="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
+                        </div>
+                    </div>
+                    <div id="success"></div>
+                    <!-- For success/fail messages -->
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
 </div>
 
 <footer>
