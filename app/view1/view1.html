@@ -1,102 +1,85 @@
 <div class="row">
-<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="200">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-  </ol>
-
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner">
-
-    <div class="item active">
-    <img src="/Content/sac skyline.jpg" alt="..." >
-      <div class="carousel-caption">
-        <h3>Atwal & Company</h3>
-      </div>
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="200">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+        </ol>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="/Content/sac skyline.jpg" alt="...">
+                <div class="carousel-caption">
+                    <h3>Atwal & Company</h3>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/Content/courtroom.jpg" alt="...">
+                <div class="carousel-caption">
+                    <h3>Law</h3>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="/Content/immigration pic.jpg" alt="...">
+            <div class="carousel-caption">
+                <h3>Immigration</h3>
+            </div>
+        </div>
+        <div class="item">
+            <img src="/Content/orchards7.jpg" alt="...">
+            <div class="carousel-caption">
+                <h3>Agriculture</h3>
+            </div>
+        </div>
     </div>
-
-    <div class="item">
-      <img src="/Content/orchards7.jpg" alt="..." >
-      <div class="carousel-caption">
-        <h3>Agriculture</h3>
-      </div>
-    </div>
-
-    <div class="item">
-      <img src="/Content/immigration pic.jpg" alt="..." >
-      <div class="carousel-caption">
-        <h3>Immigration</h3>
-      </div>
-    </div>
-
-    <div class="item">
-      <img src="/Content/courtroom.jpg" alt="..." >
-      <div class="carousel-caption">
-        <h3>Law</h3>
-      </div>
-    </div>
-  </div>
-
 </div>
 </div>
 </div>
 </div>
-</div>
-
-
 <div class="row">
-<div class="col-md-4">
-insert area of law here 
+    <div class="col-md-4">
+        insert area of law here
+    </div>
+    <div class="col-md-4">
+        <form action="contact.php" method="POST" name="sentMessage" id="contactForm" novalidate>
+            <legend>Contact Us</legend>
+            <div class="control-group form-group">
+                <div class="controls">
+                    <label>Full Name:</label>
+                    <input type="text" class="form-control" id="name" name="fullName" required data-validation-required-message="Please enter your name.">
+                    <p class="help-block"></p>
+                </div>
+            </div>
+            <div class="control-group form-group">
+                <div class="controls">
+                    <label>Phone Number:</label>
+                    <input type="tel" class="form-control" name="phone" id="phone" required data-validation-required-message="Please enter your phone number.">
+                </div>
+            </div>
+            <div class="control-group form-group">
+                <div class="controls">
+                    <label>Email Address:</label>
+                    <input type="email" class="form-control" name="email" id="email" required data-validation-required-message="Please enter your email address.">
+                </div>
+            </div>
+            <div class="control-group form-group">
+                <div class="controls">
+                    <label>Message:</label>
+                    <textarea rows="10" cols="100" class="form-control" name="message" id="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
+                </div>
+            </div>
+            <div id="success"></div>
+            <!-- For success/fail messages -->
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+    </div>
+    <div class="col-md-4">
+        insert area of law here
+    </div>
 </div>
-
-<div class="col-md-4">
-<form action="contact.php" method="POST" name="sentMessage" id="contactForm" novalidate>
-<legend>Contact Us</legend>
-                    <div class="control-group form-group">
-                        <div class="controls">
-                            <label>Full Name:</label>
-                            <input type="text" class="form-control" id="name" name="fullName" required data-validation-required-message="Please enter your name.">
-                            <p class="help-block"></p>
-                        </div>
-                    </div>
-                    <div class="control-group form-group">
-                        <div class="controls">
-                            <label>Phone Number:</label>
-                            <input type="tel" class="form-control" name="phone" id="phone" required data-validation-required-message="Please enter your phone number.">
-                        </div>
-                    </div>
-                    <div class="control-group form-group">
-                        <div class="controls">
-                            <label>Email Address:</label>
-                            <input type="email" class="form-control" name="email" id="email" required data-validation-required-message="Please enter your email address.">
-                        </div>
-                    </div>
-                    <div class="control-group form-group">
-                        <div class="controls">
-                            <label>Message:</label>
-                            <textarea rows="10" cols="100" class="form-control" name="message" id="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
-                        </div>
-                    </div>
-                    <div id="success"></div>
-                    <!-- For success/fail messages -->
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
-</div>
-
-<div class="col-md-4">
-insert area of law here 
-</div>
-
-
-</div>
-
-
-
-
-
-  <footer>
-  © Atwal & Company 2015
-  </footer>
+<footer>
+    © Atwal & Company 2015
+</footer>
