@@ -1,0 +1,15 @@
+$icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+nav {
+    border: 1px solid purple;
+    display: flex;
+    ul {
+        border: 1px solid red;
+        display: flex;
+        list-style-type: none;
+        flex:1;
+        li {
+            border: 1px solid blue;
+            flex:1;
+        }
+    }
+}
