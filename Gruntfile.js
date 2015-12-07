@@ -48,7 +48,7 @@ module.exports = function (grunt) {
         files: ['Gruntfile.js']
       },
       styles: {
-        files: ['<%= config.app %>/styles/{,*/}*.css'],
+        files: ['<%= config.app %>/styles/{,*/}*.scss'],
         tasks: ['newer:copy:styles', 'postcss']
       }
     },
@@ -177,6 +177,17 @@ module.exports = function (grunt) {
           src: '{,*/}*.css',
           dest: '.tmp/styles/'
         }]
+      }
+    },
+
+    sass : {
+      dist : {
+        options : {
+          style : 'compressed' // or 'expanded'
+        },
+        files : {
+          'app/main.css' : 'app/styles/main.scss'
+        }
       }
     },
 
@@ -364,6 +375,9 @@ module.exports = function (grunt) {
     }
   });
 
+// Load NPM Modules
+  grunt.loadNpmTasks('grunt-contrib-sass');
+
 
   grunt.registerTask('serve', 'start the server and preview your app', function (target) {
 
@@ -376,6 +390,7 @@ module.exports = function (grunt) {
       'wiredep',
       'concurrent:server',
       'postcss',
+      'sass',
       'browserSync:livereload',
       'watch'
     ]);

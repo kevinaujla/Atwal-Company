@@ -13,30 +13,105 @@
     <link rel="shortcut icon" href="/favicon.ico">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="app.css">
-    <script src="/bower_components/jquery/dist/jquery.js"></script>
+
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="main.css">
+
+    <!-- Font -->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Crimson+Text:400,600,700' rel='stylesheet' type='text/css'>
+
+    <!-- Font Icons -->
+    <link href="https://file.myfontastic.com/YfFMzw2YZywiXrAN4mSf8h/icons.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header class="container-fluid">
+      <ul>
+        <li>
+          <a href="#/">
+            <img src="images/logo.png" width="400px">
+          </a>
+        </li>
+        <li>
+          <a href="#/">Home</a>
+        </li>
+        <li>
+          <a href="#/">About</a>
+        </li>
+        <li>
+          <a href="#/">Blog</a>
+        </li>
+        <li>
+          <a href="#/">Areas of Law</a>
+        </li>
+        <li>
+          <a href="#/">Contact</a>
+        </li>
+      </ul>
+    </header>
+
+    <div ng-view></div>
+
+    <footer>
+      <div class="container">
+
+        <div>
+          <img src="images/tree.jpg" width="40%">
+        </div>
+        <div>
+          <span>Address</span>
+          <address>
+            <p>
+            2400 Del Paso Road, Suite 166<br>
+            Sacramento, CA 95834<br>
+            (123) 456-7890<br>
+            <a href="mailto:#">youremail@atwalco.com</a>
+            </p>
+          </address>
+        </div>
+        <div>
+          <!-- <span>Social Media</span> -->
+          <div id="social">        
+            <i class="icon-budicon-17"></i>
+            <i class="icon-facebook-squared"></i>
+            <i class="icon-linkedin"></i>
+          </div>
+        </div>
+        
+      </div>
+
+      <div class="container" id="border">
+        <div>      
+          <a href="#/">Home</a>
+          <a href="#/">About</a>
+          <a href="#/">Blog</a>
+          <a href="#/">Areas of Law</a>
+          <a href="#/">Contact</a>
+        </div>
+        <div>
+          © Atwal & Company 2015
+        </div>
+      </div>
+    </footer>
+    
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-animate/angular-animate.min.js"></script>
     <script src="bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
+
     <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.14.3.js"></script>
-    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css" />
+    
     <script src="/bower_components/modernizr/modernizr.js"></script>
-    <script src="/bower_components/bootstrap/js/affix.js"></script>
-    <script src="/bower_components/bootstrap/js/alert.js"></script>
-    <script src="/bower_components/bootstrap/js/dropdown.js"></script>
-    <script src="/bower_components/bootstrap/js/tooltip.js"></script>
-    <script src="/bower_components/bootstrap/js/modal.js"></script>
-    <script src="/bower_components/bootstrap/js/transition.js"></script>
-    <script src="/bower_components/bootstrap/js/button.js"></script>
-    <script src="/bower_components/bootstrap/js/popover.js"></script>
-    <script src="/bower_components/bootstrap/js/carousel.js"></script>
-    <script src="/bower_components/bootstrap/js/scrollspy.js"></script>
-    <script src="/bower_components/bootstrap/js/collapse.js"></script>
-    <script src="/bower_components/bootstrap/js/tab.js"></script>
-    <script src="components/version/version.js"></script>
-    <script src="components/version/version-directive.js"></script>
-    <script src="components/version/interpolate-filter.js"></script>
+
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
     <script src="app.js"></script>
     <script src="carouselController.js"></script>
     <script src="view1/view1.js"></script>
@@ -45,51 +120,7 @@
     <script src="view5/view5.js"></script>
     <script src="view6/view6.js"></script>
     <script src="view7/view7.js"></script>
-</head>
 
-<body>
-    <div class="container">
-        <header>
-            <nav class="navbar navbar-default">
-                <div class="container-fluid">
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="navbar-header">
-                        <a class="navbar-brand" href="#/view1">Atwal & Company</a>
-                    </div>
-                    <ul class="nav navbar-nav navbar-left">
-                        <address>
-                            2400 Del Paso Road, Suite 166
-                            <br> Sacramento, CA 95834
-                            <br> (123) 456-7890
-                            <br>
-                            <a href="mailto:#">youremail@atwalco.com</a>
-                        </address>
-                    </ul>
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li><a href="#/Home">Home</a></li>
-                            <li><a href="#/About">About</a></li>
-                            <li><a href="#/Blog">Blog</a></li>
-                            <li><a href="#/AreasOfLaw">Areas of Law</a></li>
-                            <li><a href="#/Contact">Contact</a></li>
-                            <form class="navbar-form navbar-left" role="search">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Search">
-                                </div>
-                            </form>
-                        </ul>
-                    </div>
-                    <!-- /.navbar-collapse -->
-                </div>
-                <!-- /.container-fluid -->
-            </nav>
-        </header>
-        <div ng-view></div>
-    </div>
-    <!-- In production use:
-  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
--->
 </body>
 
 </html>

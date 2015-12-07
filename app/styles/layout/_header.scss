@@ -1,0 +1,33 @@
+header{
+  display: flex;
+  // border: 1px solid green;
+  font-family: $font2;
+  ul{
+    // border: 1px solid green;
+    border-bottom: 1px solid green;
+    display: flex;
+    flex: 1;
+    height: 100px;
+    align-items: center;
+    margin-bottom: $padding;
+    li{
+      // border: 1px solid yellow;
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+        &:first-child{
+          flex: 3;
+          // border: 1px solid red;
+        }
+      a{
+        // border: 1px solid blue;
+        color: #004D1F;
+        text-align: center;
+        text-transform: uppercase;
+        flex: 1;
+        font-size: 16px;
+      }
+    }
+  }
+}
