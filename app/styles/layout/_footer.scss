@@ -1,0 +1,100 @@
+footer{
+  // border: 1px solid red;
+  display: flex;
+  background-color: #005400;
+  padding-top: $padding ;
+  height: 250px;
+  flex-direction: column;
+  font-family: $font2;
+  div{
+    display: flex;
+    // Top
+    &:first-child{
+      flex: 3;
+      div{
+        display: flex;
+        // margin-top: $padding;
+        flex-direction: column;
+        span{
+          color: white;
+          padding-bottom: $padding * 2;
+          text-transform: uppercase;
+          font-size: 14px;
+        }
+        &:first-child{
+          // border: 3px solid red;
+          flex: 1;
+        } 
+        &:nth-child(2){
+          // border: 1px solid green;
+          flex: 1;
+          span{
+            padding-top: $padding;
+            // border: 1px solid red;
+          }
+          address{
+            font-family: $font3;
+            color: white;
+            font-size: 16px;
+            a{
+              color: white;
+              text-decoration: underline;
+            }
+          }
+        } 
+        &:nth-child(3){
+          flex: 1;
+        }
+        &:last-child{
+          // border: 1px solid green;
+          flex: 1;
+          div#social{
+            // border: 1px solid blue;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            justify-content: center;
+            i{
+              font-size: 200%;
+              margin-right: $padding;
+            }
+          }
+        } 
+      }     
+    }
+
+    // Bottom
+    &:last-child{
+      
+      // Seperator
+      &#border{
+        border-top: 1px solid white;
+      }
+
+      // border: 1px solid blue;
+      flex: 1;
+      div{
+        display: flex;
+        flex-direction: row;
+        &:first-child{
+          // border: 1px solid red;
+          flex: 2;
+          align-items: center;
+          justify-content: space-between;
+          text-transform: uppercase;
+          a{
+            color: white;
+            font-size: 12px;
+          }
+        }
+        &:last-child{
+          align-items: center;
+          justify-content: flex-end;
+          // border: 1px solid yellow;
+          flex: 1;
+          color: white;
+        }
+      }
+    }
+  }
+}
