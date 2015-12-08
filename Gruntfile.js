@@ -186,7 +186,7 @@ module.exports = function (grunt) {
           style : 'compressed' // or 'expanded'
         },
         files : {
-          'app/main.css' : 'app/styles/main.scss'
+          'app/main.css' : 'app/main.scss'
         }
       }
     },
