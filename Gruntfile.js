@@ -49,7 +49,7 @@ module.exports = function (grunt) {
       },
       styles: {
         files: ['<%= config.app %>/styles/{,*/}*.scss'],
-        tasks: ['newer:copy:styles', 'postcss']
+        tasks: ['newer:copy:styles', 'postcss', 'sass']
       }
     },
 
