@@ -23,14 +23,17 @@ header{
         }
       a{
         // border: 1px solid blue;
-        color: #004D1F;
+        color: #005400;
         text-align: center;
         text-transform: uppercase;
         flex: 1;
-        font-size: 16px;
+        font-size: 22px;
+        font-family: "Times New Roman"
       }
     a:hover{
-     font-size:18px;
+     font-size:20px;
+     text-decoration:none;
+     color:#00B300;
     }
     }
   }
