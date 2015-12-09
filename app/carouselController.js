@@ -8,7 +8,7 @@ angular.module('myApp.CarouselDemoCtrl',['ngAnimate', 'ui.bootstrap'])
   var slides = $scope.slides = [
     {
       image: '/Content/sacSkyline.jpg',
-      text: 'Insert Caption'
+      text: 'A Full Service Law Firm'
     },
     {
       image: '/Content/courtroom.jpg',
