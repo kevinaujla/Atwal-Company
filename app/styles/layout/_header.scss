@@ -1,40 +1,25 @@
 header{
-  display: flex;
-  // border: 1px solid green;
-  font-family: $font2;
-  ul{
-    // border: 1px solid green;
-    border-bottom: 1px solid green;
-    display: flex;
-    flex: 1;
-    height: 100px;
-    align-items: center;
-    margin-bottom: $padding;
-    padding: 30px 40px 30px 0px;
-    li{
-      // border: 1px solid yellow;
-      flex: 1;
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
-        &:first-child{
-          flex: 3;
-          // border: 1px solid red;
-        }
-      a{
-        // border: 1px solid blue;
-        color: #005400;
-        text-align: center;
-        text-transform: uppercase;
-        flex: 1;
-        font-size: 22px;
-        font-family: "Times New Roman"
-      }
-    a:hover{
-     font-size:20px;
-     text-decoration:none;
-     color:#00B300;
-    }
-    }
-  }
+  border-bottom: 1px solid green;
+  margin-bottom: 20px;
+}
+
+a#link {
+    position: absolute;
+    text-align: center;
+    font-size: 23px;
+    text-transform: uppercase;
+    color: #005400;
+    padding-top: 28px;
+}
+
+header.container-fluid {
+  padding: 5px 35px 5px 35px;
+}
+
+.col-md-2.col-lg-2.col-sm-2{
+    width: 14.7%;
+}
+
+.col-md-3.col-lg-3.col-sm-3{
+    width: 37%;
 }

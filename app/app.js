@@ -10,7 +10,6 @@ angular.module('myApp', [
   'myApp.view2',
   'myApp.view3',
   'myApp.view5',
-  'myApp.view6',
   'myApp.view7',
 ]).
 config(['$routeProvider', function($routeProvider) {
