@@ -9,11 +9,29 @@ h2 {
     text-align: center;
 }
 
-p.ng-binding {
-    font-size: 50px;
+p#carousel{
     text-shadow: 5px 5px 5px black;
+    text-align: center;
 }
 
 ol.carousel-indicators {
     visibility: hidden;
+}
+
+.carousel-inner{
+	margin-bottom: 10px;
+}
+
+
+p#carousel{
+
+  @media (min-width: $screen-sm-min) {
+
+  }
+  @media (min-width: $screen-md-min) {
+  }
+  @media (min-width: $screen-lg-min) {
+    font-size: 40px;
+  }
+
 }

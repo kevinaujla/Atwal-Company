@@ -33,6 +33,12 @@ body {
   font-family: $font2;
 }
 
+
+@font-face {
+  font-family: visby;
+  src: url("VisbyCF-Bold.ttf");
+}
+
 @import 'styles/layout/_header';
 @import 'styles/layout/_footer';
 @import 'styles/layout/_contact';

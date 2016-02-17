@@ -9,9 +9,9 @@ legend {
 }
 
 button.btn.btn-primary {
-    margin: 10px 20px 10px 18px;
+    margin-top: 10px;
+    width: 100%;
     font-size: 18px;
-    width: 326px;
     background-color:#005400;
 }
 
@@ -29,5 +29,8 @@ button.btn.btn-primary:hover {
 
 form#contactForm {
     padding-top: 20px;
-    padding-bottom: 160px;
+    padding-bottom: 10px;
+    @media (min-width: $screen-sm-min) {
+        padding-bottom: 160px;
+    }
 }

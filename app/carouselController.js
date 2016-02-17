@@ -23,4 +23,5 @@ angular.module('myApp.CarouselDemoCtrl',['ngAnimate', 'ui.bootstrap'])
       text: 'Agriculture'
     }
   ];
+
 });

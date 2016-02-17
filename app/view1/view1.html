@@ -1,15 +1,13 @@
 <div class="row">
     <div ng-controller="CarouselDemoCtrl">
-        <div style="height: 450px">
-            <uib-carousel interval="myInterval" no-wrap="noWrapSlides">
-                <uib-slide ng-repeat="slide in slides" active="slide.active">
-                    <img ng-src="{{slide.image}}" style="max-height:500px; margin:auto;">
-                    <div class="carousel-caption">
-                        <p>{{slide.text}}</p>
-                    </div>
-                </uib-slide>
-            </uib-carousel>
-        </div>
+        <uib-carousel interval="myInterval" no-wrap="noWrapSlides">
+            <uib-slide ng-repeat="slide in slides" active="slide.active">
+                <img ng-src="{{slide.image}}" style="max-height:500px; margin:auto;">
+                <div class="carousel-caption">
+                    <p id="carousel">{{slide.text}}</p>
+                </div>
+            </uib-slide>
+        </uib-carousel>
     </div>
 </div>
 

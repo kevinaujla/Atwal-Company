@@ -1,7 +1,7 @@
 footer{
   // border: 1px solid red;
   display: flex;
-  background-color: #005400;
+  background-color: #004D1F;
   padding-top: $padding ;
   height: 250px;
   flex-direction: column;
@@ -17,7 +17,16 @@ footer{
         flex-direction: column;
         span{
           color: white;
-          padding-bottom: $padding * 2;
+          padding-bottom: 10px;
+          @media (min-width: $screen-sm-min) {
+            padding-bottom: $padding * 2;
+          }
+          @media (min-width: $screen-md-min) {
+            padding-bottom: $padding * 2;
+          }
+          @media (min-width: $screen-lg-min) {
+            padding-bottom: $padding * 2;
+          }
           text-transform: uppercase;
           font-size: 14px;
         }
@@ -26,7 +35,20 @@ footer{
           flex: 1;
         } 
         &:nth-child(2){
-          // border: 1px solid green;
+          padding-right: 10px;
+          @media (min-width: $screen-sm-min) {
+            padding-right: 0px;
+            padding-left: 20px;
+          }
+          @media (min-width: $screen-md-min) {
+            padding-right: 0px;
+            padding-left: 100px;
+          }
+          @media (min-width: $screen-lg-min) {
+            padding-right: 0px;
+            padding-left: 180px;
+          }
+
           flex: 1;
           span{
             padding-top: $padding;
@@ -35,7 +57,16 @@ footer{
           address{
             font-family: $font3;
             color: white;
-            font-size: 16px;
+            font-size: 12px;
+            @media (min-width: $screen-sm-min) {
+              font-size: 16px;
+            }
+            @media (min-width: $screen-md-min) {
+              font-size: 16px;
+            }
+            @media (min-width: $screen-lg-min) {
+              font-size: 16px;
+            }
             a{
               color: white;
               text-decoration: underline;
@@ -54,6 +85,16 @@ footer{
             align-items: center;
             flex-direction: row;
             justify-content: center;
+            margin-left: 10px;
+            @media (min-width: $screen-sm-min) {
+              margin-left: 0px;
+            }
+            @media (min-width: $screen-md-min) {
+              margin-left: 0px;
+            }
+            @media (min-width: $screen-lg-min) {
+              margin-left: 0px;
+            }
             i{
               font-size: 200%;
               margin-right: $padding;
@@ -85,6 +126,10 @@ footer{
           a{
             color: white;
             font-size: 12px;
+            padding: 12px;
+            @media (min-width: $screen-sm-min) {
+              padding: 0px;
+            }
           }
         }
         &:last-child{
@@ -96,5 +141,31 @@ footer{
         }
       }
     }
+  }
+}
+
+#copyright{
+  font-size: 8px;
+}
+
+#logoFooter{
+  height: 120px;
+  width: 120px;
+  padding-right: 10px;
+  margin-top: 20px;
+  @media (min-width: $screen-sm-min) {
+    margin-left: 40px;
+    margin-top: 20px;
+  }
+  @media (min-width: $screen-md-min) {
+    height: 180px;
+    width: 180px;
+    margin-left: 50px;
+  }
+  @media (min-width: $screen-lg-min) {
+    height: 180px;
+    width: 180px;
+    margin-left: 100px;
+    margin-top: 0;
   }
 }

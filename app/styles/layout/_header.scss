@@ -1,25 +1,85 @@
-header{
-  border-bottom: 1px solid green;
-  margin-bottom: 20px;
+// Media Queries
+$screen-sm-min: 768px;
+$screen-md-min: 992px;
+$screen-lg-min: 1200px;
+
+.navbar-header{
+  height: 60px;
+  @media (min-width: $screen-sm-min) {
+    height: 120px;
+  }
 }
 
-a#link {
-    position: absolute;
-    text-align: center;
-    font-size: 23px;
-    text-transform: uppercase;
-    color: #005400;
+.navbar-default{
+  background-color: white;
+  border-bottom: 1.5px solid green;
+}
+
+.navbar{
+  border-radius: 0px;
+}
+
+.navbar-right{
+  @media (min-width: $screen-sm-min) {
+    margin-top: 20px;
+  }
+}
+
+.navbar-default .navbar-nav > li > a{
+  text-transform: uppercase;
+  color: #005400;
+  font-family: visby;  
+  text-decoration:none;
+  font-size: 18px;
+  @media (min-width: $screen-sm-min) {
     padding-top: 28px;
+    font-size: 18px;
+    &:hover{
+      color: green;
+      text-decoration:none;
+    }
+  }
+  @media (min-width: $screen-md-min) {
+    padding-top: 28px;  
+    font-size: 24px;
+  }
+  @media (min-width: $screen-lg-min) {
+    padding-top: 28px;
+    font-size: 24px;
+  }
+  &:hover{
+    color: green;
+    text-decoration:none;
+  }
 }
 
 header.container-fluid {
   padding: 5px 35px 5px 35px;
 }
 
-.col-md-2.col-lg-2.col-sm-2{
-    width: 14.7%;
+.navbar-brand{
+  padding: 5px 15px 5px 15px !important;
+  @media (min-width: $screen-sm-min) {
+    padding: 15px 15px 15px 0px !important;
+  }  
 }
 
-.col-md-3.col-lg-3.col-sm-3{
-    width: 37%;
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #004D1F !important;
+}
+
+#logo{
+  width: 200px;
+  @media (min-width: $screen-sm-min) {
+    width: 250px;
+    margin-top: 15px;
+  }
+  @media (min-width: $screen-md-min) {
+    width: 400px;
+    margin-top: 0px;
+  }
+  @media (min-width: $screen-lg-min) {
+    width: 400px;
+    margin-top: 0px;
+  }
 }
